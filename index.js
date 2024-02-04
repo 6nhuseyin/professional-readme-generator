@@ -32,9 +32,10 @@ const questions = [
     },
 
     {
-        type: "input",
+        type: "list",
         message: "What license do you need?",
         name: "license",
+        choices: ["MIT", "GNU GPLv3", "Apache 2.0", "BSD 3-Clause", "None"],
     },
     {
         type: "input",
@@ -68,9 +69,7 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     console.log("startinit");
-    inquirer.prompt(
-        questions
-    ).then((answers) => {
+    inquirer.prompt(questions).then((answers) => {
         
         const markdownContent = generateMarkdown(answers);
         writeToFile('testREADME.md', markdownContent);
