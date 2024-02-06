@@ -3,7 +3,7 @@ const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// array of questions for user
+// array of questions for user inputs
 const questions = [
     {
         type: "input",
@@ -14,11 +14,6 @@ const questions = [
         type: "input",
         message: 'Provide a description of your project:',
         name: "description",
-    },
-    {
-        type: "input",
-        message: "What is table of content?",
-        name: "content",
     },
     {
         type: "input",
@@ -39,7 +34,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "Who contribuited to this project?",
+        message: "Who can contribuite to this project?",
         name: "contribution",
     },
     {
