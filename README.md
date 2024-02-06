@@ -1,4 +1,4 @@
-# professional-readme-generator
+# Professional-readme-generator
 
 A command-line application that generates a professional README.md file from user input. This tool streamlines the process of setting up a well-documented GitHub repository, allowing developers to focus more on their projects. Built with Node.js and the Inquirer package, it offers a simple yet effective way to generate comprehensive README files.
 
@@ -9,23 +9,33 @@ Node.js: Built on Node.js, ensuring a seamless command-line experience.
 
 ## Links
 
-Here you can find a short video explaining the app functionality:
-Here is the GitHub repository:
+Here you can find a short video explaining the how the program:
+```https://drive.google.com/file/d/1iAFWdYvk7BXtPIaNwGj7g5xD7h4f0vnB/view?usp=drive_link```
+
+Here is the GitHub repository: ```https://github.com/6nhuseyin/professional-readme-generator```
 
 ## Installation
 
-Clone the repository:
+Clone the repository: 
+```https://github.com/6nhuseyin/professional-readme-generator```
 
-Navigate to Project Directory:
+Navigate to Project Directory: ```cd professional-readme-generator```
 
-Install Dependencies:
+Install Dependencies: ```npm install```
 
-Run the Application:
+Run the Application: ```node index.js```
 
-Follow Prompts: Answer the prompts to provide information about your project
+Follow Prompts: Answer the prompts to provide information about the project
 
-README Generation: Once all prompts are complete, the application will dynamically generate a Generated-README.md file in the project root based on your inputs.
+README Generation: When all prompts are answered, the program will  generate a TestREADME.md file in the project root directory based on your inputs.
 
+## Usage
+
+![Test Readme](./images/Test-ReadMe.png)
+
+![Test Readme2](./images/Test-ReadMe2.png)
+
+![Test Readme2](./images/Test-ReadMe3.png)
 
 ## Contributing
 
