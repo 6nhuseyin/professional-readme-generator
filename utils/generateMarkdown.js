@@ -2,7 +2,7 @@
 function generateMarkdown(data) {
   let markdown = `# ${data.title}\n\n`;
 
-// Adding license badge
+  // Adding license badge
 
   markdown += `## Description\n${data.description}\n\n`;
   markdown += `## Table of Contents\n`;
@@ -15,7 +15,7 @@ function generateMarkdown(data) {
 
   markdown += `## Installation\n${data.install}\n\n`;
   markdown += `## Usage\n${data.usage}\n\n`;
-  
+
   if (data.license !== 'None') {
     markdown += `## License\nThis project is licensed under the ${data.license} license.\n\n`;
     markdown += `![License](https://img.shields.io/badge/license-${data.license.replace(" ", "_")}-blue.svg)\n\n`;
@@ -25,7 +25,12 @@ function generateMarkdown(data) {
   markdown += `## Contributing\n${data.contribution}\n\n`;
   markdown += `## Tests\n${data.tests}\n\n`;
   markdown += `## Questions\nFor any questions, please contact me at [${data.email}](mailto:${data.email}).\n`;
-
+  markdown += `For additional questions, you can reach me at [${data.email || "your@email.com"}](mailto:${data.email || "your@email.com"}).\n`;
+  if (data.github) {
+    markdown += `Visit my GitHub profile: [${data.github}](https://github.com/${data.github}).\n`;
+  } else {
+    markdown += `GitHub profile not provided.\n`;
+  }
   return markdown;
 
 }
